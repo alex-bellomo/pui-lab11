@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <!-- Bootstrap Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+  <!--This is the container for the grid in Bootstrap-->
+  <div class="container-fluid">
+    <h1>Hello World!</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+
+    <!--Here is a single row with a 4/8 column split in Bootstrap-->
+    <div class="row">
+      <div class="col" style="background-color:lavender;">.col</div>
+        <!-- Add contact  form inside this DIV-->
+        <div class="col-6" style="background-color:lavenderblush;">
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+                <div class="form-group">
+                    <label for="body">Body:</label>
+                    <textarea class="form-control" id="body"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary col-12" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+            </form>
+        </div>
+        <div class="col" style="background-color:whitesmoke;">.col</div>
+    </div>
+    <div class="row">
+      <div class="col-3" style="background-color:lavender;">.col-3</div>
+         <div class="col-3" style="background-color:lavenderblush;">.col-3</div>
+        <div class="col-6" style="background-color:whitesmoke;">.col-6</div>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thank you</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Thanks for contacting us!
+        </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
